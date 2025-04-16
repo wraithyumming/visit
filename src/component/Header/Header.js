@@ -22,6 +22,11 @@ const Header = () => (
               <img src={instIcon} alt="Instagram" className="icon" />
            </a>
       </div>
+
+      <div className="switch">
+        <div className="theme light"></div>
+      </div>
+
     </div>
 );
 
