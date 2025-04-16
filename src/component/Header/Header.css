@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100px;
   width: 100%;
@@ -27,7 +28,7 @@
   height: 55px;
   width: 222px;
   border-radius: 55px;
-  background: #4824ff;
+  background: #785dff;
   border: none;
   color: white;
   font-weight: 500;
@@ -37,6 +38,7 @@
   margin-left: auto;
   cursor: pointer;
   outline: none;
+  margin: 100px;
 }
 
 .btn:hover {
