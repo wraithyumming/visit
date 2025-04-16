@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css"; // просто импортируй файл, если не CSS Modules
+import "./Header.css";
 
 const Header = () => (
   <div className="menu">
