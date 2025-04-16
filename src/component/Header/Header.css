@@ -1,0 +1,61 @@
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 0 2%;
+  background-color: #fff;
+}
+
+.menu a {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 3%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: rgb(160, 159, 255);
+  filter: drop-shadow(0px 0px 50px #826afc);
+}
+
+.btn {
+  position: relative;
+  height: 55px;
+  width: 222px;
+  border-radius: 55px;
+  background: #4824ff;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  margin-left: auto;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  filter: drop-shadow(0px 0px 35px #4824ff40);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: -50px;
+  height: 300px;
+  width: 30px;
+  background: #ffffffbd;
+  filter: blur(2px);
+  transition: 1.5s;
+  transform: rotate(-20deg) translateX(0);
+}
+
+.btn:hover::before {
+  transform: rotate(-20deg) translateX(250px);
+}
