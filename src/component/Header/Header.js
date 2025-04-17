@@ -3,7 +3,7 @@ import "./Header.css";
 import tgIcon from '../Header/assets/tg50.png';
 import instIcon from '../Header/assets/inst48.png';
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
-import modalWindow from './ModalWindow/modalWindow'
+import ModalWindowComponent from './ModalWindow/ModalWindowComponent'
 
 const Header = () => (
   <div className="menu">
@@ -16,7 +16,7 @@ const Header = () => (
     </div>
 
     <div className="menu-actions">
-      <modalWindow />
+      <ModalWindowComponent />
       <button className="btn">Связаться</button>
       <a href="https://t.me/deuceich" target="_blank">
         <img src={tgIcon} alt="Telegram" className="icons" />
