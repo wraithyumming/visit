@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
-import tgIcon from '../../assets/icons/tg50.png';
-import instIcon from '../../assets/icons/inst48.png';
+import tgIcon from '../Header/assets/tg50.png';
+import instIcon from '../Header/assets/inst48.png';
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
+import modalWindow from './ModalWindow/modalWindow'
 
 const Header = () => (
   <div className="menu">
@@ -15,16 +16,16 @@ const Header = () => (
     </div>
 
     <div className="menu-actions">
+      <modalWindow />
       <button className="btn">Связаться</button>
       <a href="https://t.me/deuceich" target="_blank">
-        <img src={tgIcon} alt="Telegram" className="icon" />
+        <img src={tgIcon} alt="Telegram" className="icons" />
       </a>
       <a href="https://www.instagram.com/" target="_blank">
-        <img src={instIcon} alt="Instagram" className="icon" />
+        <img src={instIcon} alt="Instagram" className="icons" />
       </a>
+      <ThemeSwitch />
     </div>
-
-    <ThemeSwitch />
 
   </div>
 );

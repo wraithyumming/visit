@@ -3,7 +3,7 @@
   align-items: center;
   height: 100px;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 20px;
   background-color: #fff;
@@ -77,65 +77,15 @@
   transform: rotate(-20deg) translateX(250px);
 }
 
-.icon {
-  height: 40px;
+.icons {
+  margin-left: 30px;
   width: 40px;
+  height: 40px;
   border-radius: 30%;
-  transition: 0.3s;
-  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.icon:hover {
-  filter: drop-shadow(0px 0px 10px #4824ff40);
-}
-
-.switch {
-  width: 135px;
-  height: 55px;
-  border-radius: 30px;
-  background-color: #eeebff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.4s ease;
-}
-
-.switch.dark {
-  background-color: #636363;
-}
-
-.icon {
-  width: 35px;
-  height: 35px;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  position: absolute;
-}
-
-.icon.sun {
-  left: 15px;
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
-}
-
-.icon.moon {
-  right: 15px;
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
-}
-
-.icon:not(.active) {
-  opacity: 0;
-  transform: scale(0.5);
-}
-
-.icon.sun:not(.active) {
-  transform: translateX(-50px) scale(0.5) rotate(-90deg);
-}
-
-.icon.moon:not(.active) {
-  transform: translateX(50px) scale(0.5) rotate(90deg);
+.icons:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px rgba(72, 36, 255, 0.4));
 }
