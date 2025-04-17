@@ -3,9 +3,9 @@
   align-items: center;
   height: 100px;
   width: 100%;
-  max-width: 1400px; 
-  margin: 0 auto; 
-  padding: 0 20px; 
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
   background-color: #fff;
   justify-content: space-between;
   box-sizing: border-box;
@@ -18,7 +18,6 @@
   margin-left: 260px;
 }
 
-
 .menu a {
   font-size: 18px;
   font-weight: 500;
@@ -26,7 +25,7 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .menu a:hover {
@@ -44,9 +43,9 @@
   position: relative;
   height: 55px;
   min-width: 180px;
-  padding: 0 25px; 
+  padding: 0 25px;
   border-radius: 55px;
-  background: #785dff;
+  background: #775cff;
   border: none;
   color: white;
   font-weight: 500;
@@ -62,7 +61,7 @@
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -150px;
   left: -50px;
@@ -90,27 +89,3 @@
   filter: drop-shadow(0px 0px 10px #4824ff40);
 }
 
-.switch {
-  width: 135px;
-  height: 55px;
-  border-radius: 55px;
-  background-color: #eeebff;
-  overflow: hidden;
-}
-
-.theme {
-  margin: 2px;
-  width: 51px;
-  height: 51px;
-  border-radius: 55px;
-  background-color: black;
-  filter: invert();
-  transition: 0.5s ease-in-out;
-}
-
-.theme .light {
-  content: url(/visit/src/assets/icons/sun-white.png)
-}
-.switch:hover > .theme.light {
-  transform: rotate(45deg);
-}

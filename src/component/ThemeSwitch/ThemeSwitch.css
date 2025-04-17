@@ -1,0 +1,50 @@
+.switch {
+  width: 135px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: #eeebff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.4s ease;
+}
+
+.switch.dark {
+  background-color: #2d2b3a;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  position: absolute;
+}
+
+.icon.sun {
+  left: 15px;
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.icon.moon {
+  right: 15px;
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.icon:not(.active) {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.icon.sun:not(.active) {
+  transform: translateX(-50px) scale(0.5) rotate(-90deg);
+}
+
+.icon.moon:not(.active) {
+  transform: translateX(50px) scale(0.5) rotate(90deg);
+}
