@@ -2,8 +2,7 @@ import React from "react";
 import "./Header.css";
 import tgIcon from '../../assets/icons/tg50.png';
 import instIcon from '../../assets/icons/inst48.png';
-import whiteSun from '../../assets/icons/sun.png'
-import moonIcon from '../../assets/icons/moon.png'
+import ThemeSwitch from '../ThemeSwitch/ThemeSwitch'
 
 const Header = () => (
   <div className="menu">
@@ -25,11 +24,7 @@ const Header = () => (
       </a>
     </div>
 
-    <div className="switch">
-        <img src={whiteSun} alt="White theme" className="light" />
-        <img src={moonIcon} alt="Black theme" className="black" />
-    </div>
-
+    <ThemeSwitch />
 
   </div>
 );
