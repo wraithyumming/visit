@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import tgIcon from '../../assets/icons/tg50.png';
 import instIcon from '../../assets/icons/inst48.png';
-import ThemeSwitch from '../ThemeSwitch/ThemeSwitch'
+import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
 
 const Header = () => (
   <div className="menu">

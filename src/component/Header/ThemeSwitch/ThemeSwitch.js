@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ThemeSwitch.css";
-import whiteSun from "../../assets/icons/sun.png";
-import moonIcon from "../../assets/icons/moon.png";
+import whiteSun from "./assets/sun.png";
+import moonIcon from "./assets/moon.png";
 
 const ThemeSwitch = () => {
   // Инициализируем тему из localStorage или используем light по умолчанию
