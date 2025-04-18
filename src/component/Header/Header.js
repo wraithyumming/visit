@@ -17,7 +17,7 @@ const Header = () => (
 
     <div className="menu-actions">
       <ModalWindowComponent />
-      <button className="btn">Связаться</button>
+     
       <a href="https://t.me/deuceich" target="_blank">
         <img src={tgIcon} alt="Telegram" className="icons" />
       </a>
