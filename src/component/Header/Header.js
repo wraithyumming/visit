@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Header.css";
 import tgIcon from '../Header/assets/tg50.png';
 import instIcon from '../Header/assets/inst48.png';
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
 import ModalWindowComponent from './ModalWindow/ModalWindowComponent'
+
 
 const Header = () => (
   <div className="menu">

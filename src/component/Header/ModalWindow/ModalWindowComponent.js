@@ -1,5 +1,6 @@
-import React, { useState, useCallback, useEffect } from "react";
-import './modalWindow.css'
+import React, { useState } from "react";
+import '../ModalWindow/modalWindow.css';
+import ModalWindowVisible from "./ModalWindowVisible.js";
 
 const ModalWindow = ({ show, onClose, children }) => {
   if (!show) return null;
@@ -24,23 +25,20 @@ const ModalWindowComponent = () => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
+  <ModalWindowVisible />
   return (
     <div>
       <button onClick={handleOpenModal} className="btn">Связаться</button>
       <ModalWindow show={showModal} onClose={handleCloseModal}>
         <h2 style={{ color: "#4824ff", fontSize: "49px" }}>Контакты</h2>
         <p style={{ fontSize: "22px" }}>
-          Вы можете связаться со мной в Телеграм <br/> или Инстаграм
+          Вы можете связаться со мной в Телеграм <br /> или Инстаграм
         </p>
       </ModalWindow>
     </div>
   );
 
-  const ModalWindowVisible = ({ show, onClose, children}) => {
-    const[isVisible, setIsVisilbe] = useState(false)
-  }
+
 
 };
-
 export default ModalWindowComponent; 
