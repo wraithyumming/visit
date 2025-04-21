@@ -20,6 +20,7 @@ code {
   height: 650px;
   display: flex;
   place-items: center;
+  padding-left: 250px;
 }
 
 .welcome-block h1 {
@@ -66,4 +67,22 @@ code {
 .welcome-block .first-block {
   align-content: center;
   width: 55%;
+}
+
+.main-image-box {
+  width: 45%;
+  margin-top: -3%;
+}
+
+.image-layer {
+  position: relative;
+  height: 500px;
+  width: 500px; 
+  animation: bouncing 5s linear infinite;
+}
+
+@keyframes bouncing {
+  0% { transform: translateY(0px);}
+  50% { transform: translateY(20px);}
+  0% { transform: translateY(0px);}
 }

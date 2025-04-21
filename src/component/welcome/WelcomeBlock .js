@@ -1,6 +1,7 @@
 import React from "react";
+import oneImage from '../../assets/images/one.jpg'; 
 
-const WelcomeBlock  = () => {
+const WelcomeBlock = () => {
     return (
         <div className="welcome-block">
             <div className="first-block">
@@ -13,6 +14,10 @@ const WelcomeBlock  = () => {
                     Начал заниматься<br />
                     стримами <span className="highlight">6 месяцев назад</span>
                 </h3>
+            </div>
+
+            <div className="main-image-box">
+                <img className="image-layer" src={oneImage} alt="Стример deuceich" draggable="false" />
             </div>
         </div>
     );
