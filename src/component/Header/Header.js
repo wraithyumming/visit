@@ -4,25 +4,29 @@ import tgIcon from '../Header/assets/tg50.png';
 import instIcon from '../Header/assets/inst48.png';
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
 import ModalWindowComponent from './ModalWindow/ModalWindowComponent'
+import ModalWindowVisible from "./ModalWindow/ModalWindowVisible";
 
 
 const Header = () => (
   <div className="menu">
     <div className="menu-links">
-      <a href="#">Обо мне</a>
-      <a href="#">Услуги</a>
-      <a href="#">Портфолио</a>
-      <a href="#">Отзывы</a>
-      <a href="#">Гарантии</a>
+    <a href="/about">О нас</a>
+      <a href="/services">Услуги</a>
+      <a href="/portfolio">Портфолио</a>
+      <a href="/reviews">Отзывы</a>
+      <a href="/guarantees">Гарантии</a>
     </div>
 
+    <ModalWindowComponent />
+    <ModalWindowVisible />
+
     <div className="menu-actions">
-      <ModalWindowComponent />
-     
-      <a href="https://t.me/deuceich" target="_blank">
+
+
+      <a href="https://t.me/deuceich" target="_blank" rel="noopener noreferrer">
         <img src={tgIcon} alt="Telegram" className="icons" />
       </a>
-      <a href="https://www.instagram.com/" target="_blank">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
         <img src={instIcon} alt="Instagram" className="icons" />
       </a>
       <ThemeSwitch />

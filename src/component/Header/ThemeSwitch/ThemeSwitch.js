@@ -4,13 +4,11 @@ import whiteSun from "../assets/sun.png";
 import moonIcon from "../assets/moon.png";
 
 const ThemeSwitch = () => {
-  // Инициализируем тему из localStorage или используем light по умолчанию
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'light';
   });
 
   useEffect(() => {
-    // Применяем тему к body и сохраняем в localStorage
     document.body.className = theme;
     localStorage.setItem('theme', theme);
     

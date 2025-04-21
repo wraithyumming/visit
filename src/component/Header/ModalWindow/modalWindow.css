@@ -4,7 +4,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +22,7 @@
 
 .modal-content {
   position: relative;
-  background: white;
+  background: rgb(236, 236, 236);
   padding: 40px;
   border-radius: 16px;
   width: 500px;
@@ -56,7 +57,7 @@
   left: 50%;
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: #363636;
 }
 
 .modal-close-button::before {
@@ -68,34 +69,30 @@
 }
 
 .social-button {
-    align-items: center;
-    display: flex;
-    height: 55px;
-    width: 220px;
-    border-radius: 55px;
-    background: black;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-right: 2%;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.social.instagram {
-    content: url(../assets/inst48.png);
-    scale: 0.6;
-    margin: -2%;
-}
-
-.social.telegram {
-    content: url(../assets/tg50.png);
-    scale: 0.6;
-    margin: -2%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 55px;
+  padding: 0 24px;
+  border-radius: 55px;
+  background: rgb(185, 198, 255);
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  min-width: 200px;
 }
 
 .social-button:hover {
-    background: #4824ff;
-    filter: drop-shadow(0px 0px 35px #4824ff40);
-    color: #eeebff;
+  background: #927dff;
+  filter: drop-shadow(0px 0px 35px #4824ff40);
+  color: #eeebff;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
