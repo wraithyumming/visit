@@ -71,18 +71,19 @@
 .social-button {
   display: flex;
   align-items: center;
+ position: center;
   gap: 12px;
   height: 60px;
   padding: 0 24px;
   border-radius: 55px;
-  background: rgb(185, 198, 255);
+  background: rgb(191, 196, 255);
   cursor: pointer;
   transition: 0.3s;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .social-button:hover {

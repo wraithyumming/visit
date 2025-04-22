@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -14,7 +15,7 @@ code {
     monospace;
 }
 
-/* WELCOMEEEEEEEEEEEEEEEEEEEE */
+/* ---------WELCOMEEEEEEE BLOCK--------- */
 
 .welcome-block {
   height: 650px;
@@ -85,4 +86,36 @@ code {
   0% { transform: translateY(0px);}
   50% { transform: translateY(20px);}
   0% { transform: translateY(0px);}
+}
+
+/* ---------Service block  ---------*/
+
+.service-block {
+  height: 500px;
+  padding-left: 250px;
+  background: #fbfaff;
+  align-content: center;
+}
+
+
+.service-block .tag {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  background: #eeebff;
+  color: #4824ff;
+  margin: 0 12px 0 0;
+  padding: 8px 22px 8px 8px;
+  border-radius: 24px;
+  
+}
+
+.service-block .tag .tag-icon {
+  margin: -10px;
+  padding: 0;
+  position: relative;
+  content: url(./assets/icons/check.png);
+  background: none;
+  scale: 0.33;
+  height: 50px;
 }

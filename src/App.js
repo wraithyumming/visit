@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
 import Header from './component/Header/Header';
-import Elementary from './component/welcome/WelcomeBlock ';
+import WelcomeBlock from './component/welcome/WelcomeBlock.js';
+import ServicesBlock from './component/Services/ServicesBlock.js';
 
 function App() {
   return (
     <div>
       <Header />
-      <Elementary />
+      <WelcomeBlock />
+      <ServicesBlock />
     </div>
   )
 }
