@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../Services/Service.css'
 import ModalWindowVisible from '../Header/ModalWindow/ModalWindowVisible';
 
 const ServicesBlock = () => {

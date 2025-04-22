@@ -1,4 +1,5 @@
 import React from "react";
+ import './Welcome.css'
 import oneImage from '../../assets/images/one.jpg'; 
 
 const WelcomeBlock = () => {
