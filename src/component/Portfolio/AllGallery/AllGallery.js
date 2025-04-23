@@ -1,10 +1,12 @@
 import React from "react";
+import Carousel from '../../Carousel/Carousel'
 
 const AllGallery = () => {
     return (
         <div>
-            <p style={{fontSize: "60px"}}>AllGallery</p>
-            </div>
+            <Carousel direction="left" />
+            <Carousel direction="right" />
+        </div>
     )
 }
 

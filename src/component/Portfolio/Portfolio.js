@@ -42,7 +42,7 @@ const Portfolio = () => {
                 <img className="array-icon" src={Arro} alt="" draggable="false" />
             </div>
 
-            <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px"}}>
                 <p className={`tag ${selectedCategory === 'All' ? 'selected' : ''}`}
                     onClick={() => setSelectedCategory('All')}>
                     Все работы
