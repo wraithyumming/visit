@@ -3,7 +3,6 @@ import Header from './component/Header/Header';
 import WelcomeBlock from './component/welcome/WelcomeBlock.js';
 import ServicesBlock from './component/Services/ServicesBlock.js';
 import Portfolio from './component/Portfolio/Portfolio.js'
-import Carousel from './component/Carousel/Carousel.js';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <WelcomeBlock />
       <ServicesBlock />
       <Portfolio />
-      <Carousel />
     </div>
   )
 }
