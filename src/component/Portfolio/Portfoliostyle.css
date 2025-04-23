@@ -54,3 +54,28 @@
     width: 200px;
   }
   
+  .portfolio-block .tag {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    background: #eeebff;
+    color: #4824ff;
+    margin: 20px 12px 0 0;
+    padding: 8px 22px;
+    border-radius: 24px;
+    border: 1px solid #eeebff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-block .tag:hover {
+    background: #9782ff;
+    color: white;
+    filter: drop-shadow(0px 0px 30px rgba(72, 36, 255, 0.15));
+}
+
+.portfolio-block .selected {
+    background: #04001a;
+    color: white;
+    border: 1px solid #9782ff;
+}
