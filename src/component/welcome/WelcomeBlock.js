@@ -6,7 +6,7 @@ const WelcomeBlock = () => {
     return (
         <div className="welcome-block">
             <div className="first-block">
-                <h1>Стример <span className="title">deuceich</span></h1>
+                <h1>Стример <a className="title" href='https://www.twitch.tv/deuceichh' target="_blank" rel="noopener noreferrer">deuceich</a></h1>
                 <h2 className="subtitle">
                     Создаю <span className="highlight">контент</span><br />
                     и <span className="highlight">уникальный</span> геймплей <br /> под ваши запросы и идеи
