@@ -1,14 +1,19 @@
 /*    Portfolio */
 
 .portfolio-block {
-    height: 740px;
+    min-height: 740px; /* Измените height на min-height */
+    overflow-x: hidden; /* Скрываем горизонтальный скролл */
+    position: relative;
 }
 
 .portfolio-block .first-block {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 20px 0; /* Добавляем отступы */
 }
+
 
 .portfolio-block .main-title {
     font-style: 56px;
