@@ -1,11 +1,16 @@
-import React from "react";
-
 const YouTubeThumbnails = () => {
     return (
-        <div>
-            <p style={{fontSize: "60px"}}>YouTubeThumbnails</p>
-            </div>
-    )
-}
-
-export default YouTubeThumbnails
+      <div
+        style={{
+          fontSize: "28px",
+          textAlign: "center",
+          margin: "220px"
+        }}
+      >
+        Работы из этой категории пока не загружены
+      </div>
+    );
+  };
+  
+  export default YouTubeThumbnails;
+  

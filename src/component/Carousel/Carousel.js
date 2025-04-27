@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import './Carousel.css';
 
 const importAll = (r) => r.keys().map(r);
-const images = importAll(require.context('../../assets/images/carousel', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../assets/images/carousel/', false, /\.(png|jpe?g|svg)$/));
 
 const Carousel = ({ direction }) => {
     const carouselRef = useRef(null);
