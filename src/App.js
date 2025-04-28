@@ -2,7 +2,10 @@ import React from 'react';
 import Header from './component/Header/Header';
 import WelcomeBlock from './component/welcome/WelcomeBlock.js';
 import ServicesBlock from './component/Services/ServicesBlock.js';
-import Portfolio from './component/Portfolio/Portfolio.js'
+import Portfolio from './component/Portfolio/Portfolio.js';
+import ReviewsCarousel from './component/Review/ReviewsCarousel.js'
+
+
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
       <WelcomeBlock />
       <ServicesBlock />
       <Portfolio />
+      <ReviewsCarousel />
     </div>
   )
 }
