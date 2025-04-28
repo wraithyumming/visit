@@ -1,8 +1,9 @@
 .review-block {
-    margin: 80px 0px;
-    height: 580px;
+    margin: 80px 0;
+    min-height: 580px; /* изменено height на min-height */
     background: #4824ff;
     border-radius: 28px;
+    padding-bottom: 40px; /* добавлено для кнопок */
 }
 
 .review-block h1 {
@@ -30,15 +31,17 @@
 .review-carousel {
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto; /* исправлен margin */
     width: 1260px;
+    position: relative; /* добавлено для позиционирования кнопок */
 }
 
 .review-container {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto; /* изменено scroll на auto */
     scroll-behavior: smooth;
-    overflow: hidden;
+    gap: 20px; /* добавлено расстояние между карточками */
+    padding: 20px 0; /* добавлено */
 }
 
 .next-button {
@@ -53,7 +56,7 @@
 }
 
 .next-button .array-next-icon {
-    content: url(../../assets/icons/arrowdown.png);
+    content: url(../../assets/icons/right.png);
     scale: 0.7;
     height: 50px;
     padding: 15px;
@@ -88,37 +91,52 @@
 
 .review-block .link {
     display: flex;
-    position: relative;
-    height: 40px;
-    width: 80px;
-    background: black;
+    align-items: center;
+    justify-content: center;
+    gap: 4px; /* расстояние между двумя иконками */
+    height: 35px;
+    width: 60px; /* увеличил ширину чтобы влезли две иконки */
+    background: rgb(155, 187, 255);
     border-radius: 24px;
     cursor: pointer;
     border: 2px solid black;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    padding: 0 8px;
 }
 
 .review-block .link:hover {
     border: 2px double #4824ff;
-    filter: drop-shadow(0px 0px 25px #4824ff90);
+    filter: drop-shadow(0px 0px 10px #4824ff90);
 }
 
 .review-block .telegram-icon {
-    margin: -7px -4px;
-    padding: 0;
-    position: relative;
     content: url(../../assets/icons/bluetg.png);
+    height: 24px;
+    width: 24px;
     background: none;
-    transform: scale(0.84);
-    height: 50px;
 }
 
 .review-block .array-corner-icon {
-    margin: -6px -18px;
-    padding: 0;
-    position: relative;
-    content: url(../../assets/icons/link\ \(1\).png);
+    content: url(../../assets/icons/arr.png);
+    height: 18px;
+    width: 18px;
     background: none;
-    transform: scale(0.37);
-    height: 50px;
+    opacity: 0.8;
 }
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev { left: 10px; }
+.next { right: 10px; }

@@ -66,26 +66,23 @@ const ReviewsCarousel = () => {
 
       <div className="review-carousel">
         <div className="review-container" ref={containerRef}>
-          {reviews.slice(-visibleReviews).map((review) => (
-            <ReviewsCard key={`before-${review.id}`} {...review} />
-          ))}
-          {reviews.map((review) => (
-            <ReviewsCard key={review.id} {...review} />
-          ))}
-          {reviews.slice(0, visibleReviews).map((review) => (
-            <ReviewsCard key={`after-${review.id}`} {...review} />
-          ))}
+          {[...reviews.slice(-visibleReviews), ...reviews, ...reviews.slice(0, visibleReviews)]
+            .map((review, i) => (
+              <ReviewsCard 
+                key={`${review.id}-${i}`} 
+                {...review} 
+              />
+            ))}
         </div>
       </div>
 
-
       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "10px" }}>
-        <p className="next-button" style={{ transform: "rotate(180deg)", cursor: "pointer" }}>
-          <span className="array-prev-icon" onClick={btnPrevReviews}>←</span>
-        </p>
-        <p className="next-button" style={{ cursor: "pointer" }}>
-          <span className="array-next-icon" onClick={btnNextReviews}>→</span>
-        </p>
+        <button className="next-button" style={{ transform: "rotate(180deg)" }} onClick={btnPrevReviews}>
+          <span className="array-prev-icon">←</span>
+        </button>
+        <button className="next-button" onClick={btnNextReviews}>
+          <span className="array-next-icon">→</span>
+        </button>
       </div>
     </div>
   );
