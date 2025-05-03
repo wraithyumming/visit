@@ -41,7 +41,7 @@
 
 .review-container {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     gap: 20px;
     padding: 20px;
@@ -61,7 +61,6 @@
 }
 
 .next-button .array-next-icon {
-    content: url(../../assets/icons/right.png);
     scale: 0.7;
     height: 50px;
     padding: 15px;
@@ -146,16 +145,3 @@
 
 .prev { left: 10px; }
 .next { right: 10px; }
-
-/* Адаптивность для мобильных */
-@media (max-width: 768px) {
-    .review-block {
-        width: 95%;
-        margin: 40px auto;
-        min-height: auto;
-    }
-    
-    .review-container {
-        width: calc(100% - 60px);
-    }
-}

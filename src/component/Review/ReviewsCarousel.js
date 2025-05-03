@@ -78,7 +78,7 @@ const ReviewsCarousel = () => {
 
       <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "10px" }}>
         <button className="next-button" style={{ transform: "rotate(180deg)" }} onClick={btnPrevReviews}>
-          <span className="array-prev-icon">←</span>
+          <span className="array-prev-icon">→</span>
         </button>
         <button className="next-button" onClick={btnNextReviews}>
           <span className="array-next-icon">→</span>
