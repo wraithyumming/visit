@@ -6,7 +6,7 @@ const ReviewsCard = ({ name, link, text }) => {
       <div className="review-content">
         <div style={{ padding: "0 20px 0 30px" }}>
           <div style={{ display: "flex", placeItems: "center" }}>
-            <h2 style={{ width: "90%" }}>{name}</h2>
+            <h2 style={{ width: "100%" }}>{name}</h2>
             <a className="link" href={link} target="_blank" rel="noreferrer">
               <p className="telegram-icon"></p>
               <p className="array-corner-icon"></p>

@@ -8,49 +8,53 @@ const ReviewsCarousel = () => {
   const visibleReviews = 3;
 
   const reviews = [
-    { id: 1, name: "Никита Д.", link: "https://t.me/deuceich", text: "Текст отзыва, оставленный клиентом в Телеграмм канале, который можно открыть нажав на кнопку в правом верхнем углу этого блока" },
-    { id: 2, name: "Андрей Б.", link: "https://t.me/deuceich", text: "Отзывы оставленные Андреем" },
-    { id: 3, name: "Ваня Л.", link: "https://t.me/deuceich", text: "Отзывы оставленные Ваней" },
+    { id: 1, name: "Никита Д.", link: "https://t.me/deuceich", text: "Текст отзыва от Никиты." },
+    { id: 2, name: "Андрей Б.", link: "https://t.me/deuceich", text: "Отзывы оставленные Андреем." },
+    { id: 3, name: "Ваня Л.", link: "https://t.me/deuceich", text: "Отзывы оставленные Ваней." },
   ];
+
+  const extendedReviews = [
+    ...reviews.slice(-visibleReviews),
+    ...reviews,
+    ...reviews.slice(0, visibleReviews)
+  ];
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const firstReview = container.querySelector('.review-card');
+    if (firstReview) {
+      reviewWidthRef.current = firstReview.clientWidth + 20; // +gap
+      const startScroll = reviewWidthRef.current * visibleReviews;
+      container.scrollLeft = startScroll;
+    }
+  }, []);
 
   const handleScroll = () => {
     const container = containerRef.current;
-    const visibleWidth = reviewWidthRef.current * visibleReviews;
+    const totalWidth = reviewWidthRef.current * (reviews.length + visibleReviews * 2);
+    const startScroll = reviewWidthRef.current * visibleReviews;
+    const endScroll = totalWidth - startScroll;
 
     if (container.scrollLeft <= 0) {
-      container.style.scrollBehavior = 'auto';
-      container.scrollLeft = container.scrollWidth - 2 * visibleWidth;
-      container.style.scrollBehavior = 'smooth';
-    }
-
-    if (container.scrollLeft >= container.scrollWidth - visibleWidth) {
-      container.style.scrollBehavior = 'auto';
-      container.scrollLeft = visibleWidth;
-      container.style.scrollBehavior = 'smooth';
+      container.scrollLeft = endScroll - reviewWidthRef.current;
+    } else if (container.scrollLeft >= endScroll) {
+      container.scrollLeft = startScroll;
     }
   };
 
   const btnPrevReviews = () => {
-    containerRef.current.scrollLeft -= reviewWidthRef.current;
+    containerRef.current.scrollBy({
+      left: -reviewWidthRef.current,
+      behavior: 'smooth',
+    });
   };
 
   const btnNextReviews = () => {
-    containerRef.current.scrollLeft += reviewWidthRef.current;
+    containerRef.current.scrollBy({
+      left: reviewWidthRef.current,
+      behavior: 'smooth',
+    });
   };
-
-  useEffect(() => {
-    const box = containerRef.current;
-    const firstReview = box.querySelector('.review-card');
-    reviewWidthRef.current = firstReview?.clientWidth || 0;
-    const width = reviewWidthRef.current * visibleReviews;
-
-    box.scrollLeft = (box.scrollWidth - width) / 2;
-    box.addEventListener('scroll', handleScroll);
-
-    return () => {
-      box.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div className="review-block">
@@ -65,14 +69,14 @@ const ReviewsCarousel = () => {
       </p>
 
       <div className="review-carousel">
-        <div className="review-container" ref={containerRef}>
-          {[...reviews.slice(-visibleReviews), ...reviews, ...reviews.slice(0, visibleReviews)]
-            .map((review, i) => (
-              <ReviewsCard 
-                key={`${review.id}-${i}`} 
-                {...review} 
-              />
-            ))}
+        <div
+          className="review-container"
+          ref={containerRef}
+          onScroll={handleScroll}
+        >
+          {extendedReviews.map((review, i) => (
+            <ReviewsCard key={`${review.id}-${i}`} {...review} />
+          ))}
         </div>
       </div>
 
