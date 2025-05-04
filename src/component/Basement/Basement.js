@@ -5,29 +5,26 @@ const Basement = () => {
     <div className="guarantees-block">
         <h1 style={{ fontSize: "52px", paddingBottom: "20px" }}>ГАРАНТІЇ</h1>
         <ol className="guarantees-points">
-  <li className="point">
-    Оплату приймаю через платіжну систему
-    <span style={{ color: "#4824ff" }}>Назва</span>,
-    яка контролює <br />безпечність грошових переказів.
-  </li>
-  <li className="point">
-    Переконатися в моїй відповідальності та професіоналізмі можна
-    <span style={{ color: "#4824ff" }}>написав клієнтам</span>,
-    <br />залишивши відгуки
-    <span style={{ color: "#4824ff" }}>особисто</span>
-    в будь-який момент (відгуки клієнтів вище).
-  </li>
-  <li className="point">
-    Всі <span style={{ color: "#4824ff" }}>авторські права</span>
-    на роботу переходять замовнику після виконання замовлення.
-  </li>
-  <li className="point">
-    В своїх роботах використовую матеріали строго
-    <span style={{ color: "#4824ff" }}>розрешені</span>
-    для особистого<br /> і комерційного використання.
-  </li>
-</ol>
+            <li className="point">
+                Оплату принимаю через платёжную систему <span style={{ color: "#4824ff" }}>Название*</span>, которая контролирует<br />безопасность денежных переводов.
+            </li>
+            <li className="point">
+                Убедиться в моей ответственности и профессионализме можно <span style={{ color: "#4824ff" }}>написав клиентам</span>,<br />оставивших отзывы <span style={{ color: "#4824ff" }}>лично</span> в любой момент (отзывы клиентов выше).
+            </li>
+            <li className="point">
+                Все <span style={{ color: "#4824ff" }}>авторские права</span> на работу переходят заказчику после выполнения заказа.
+            </li>
+            <li className="point">
+                В своих работах использую материалы строго <span style={{ color: "#4824ff" }}>разрешенные для личного<br />и коммерческого использования</span>.
+            </li>
+        </ol>
+            
+        <div className="footer">Workford</div>
+    
     </div>
+
+    
+
 }
 
 export default Basement;
