@@ -25,9 +25,8 @@
     height: 30px;
     background-image: url('../../assets/icons/checkblue.png');
     background-size: contain;
-   margin-left: -35px;
     background-repeat: no-repeat;
-   
+    margin-left: -35px;
 }
 
 .highlight {

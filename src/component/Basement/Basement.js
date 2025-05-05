@@ -7,7 +7,7 @@ const Basement = () => {
             <h1 style={{ fontSize: "52px", paddingBottom: "20px" }}>ГАРАНТІЇ</h1>
             <ol className="guarantees-points">
                 <li className="point">
-                    Оплату приймаю через платіжну систему <span className="highlight">Назва*</span>, яка контролює<br />безпеку грошових переказів.
+                    Оплату приймаю через платіжну систему <span className="highlight">PAYPAL</span>, яка контролює<br />безпеку грошових переказів.
                 </li>
                 <li className="point">
                     Переконатися в моїй відповідальності та професіоналізмі можна <span className="highlight">написавши клієнтам</span>,<br />які залишили відгуки <span className="highlight">особисто</span> у будь-який момент (відгуки клієнтів вище).

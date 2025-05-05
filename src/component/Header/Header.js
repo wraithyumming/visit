@@ -9,6 +9,7 @@ import ModalWindowVisible from "./ModalWindow/ModalWindowVisible";
 
 
 const Header = () => (
+
   <div className="menu">
     <div className="menu-links">
       <a href="/about">О нас</a>
@@ -16,8 +17,8 @@ const Header = () => (
       <a href="/portfolio">Портфолио</a>
       <a href="/reviews">Отзывы</a>
       <a href="/guarantees">Гарантии</a>
-    </div>
 
+    </div>
     <ModalWindowComponent />
     <ModalWindowVisible />
 
@@ -32,10 +33,10 @@ const Header = () => (
       </a>
       <ThemeSwitch />
     </div>
-   
+
   </div>
- 
+
 
 );
- 
+
 export default Header;

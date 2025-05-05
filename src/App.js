@@ -5,6 +5,7 @@ import ServicesBlock from './component/Services/ServicesBlock.js';
 import Portfolio from './component/Portfolio/Portfolio.js';
 import ReviewsCarousel from './component/Review/ReviewsCarousel.js';
 import Basement from './component/Basement/Basement.js'
+import Theme from './component/Theme/Theme.js'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Portfolio />
       <ReviewsCarousel />
       <Basement />
+      <Theme />
 
     </div>
   )
