@@ -1,0 +1,47 @@
+.guarantees-block {
+    height: 540px;
+    font-size: 26px;
+    padding-left: 250px;
+    overflow: hidden;
+}
+
+.guarantees-points {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.guarantees-points li {
+    position: relative;
+    margin-top: 35px;
+}
+
+.guarantees-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/icons/checkblue.png');
+    background-size: contain;
+   margin-left: -35px;
+    background-repeat: no-repeat;
+   
+}
+
+.highlight {
+    color: #4824ff;
+}
+
+.footer {
+    height: 80px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(206, 196, 254, 0.31);
+    margin-left: -5vw;
+    margin-right: -5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
