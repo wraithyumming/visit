@@ -20,7 +20,8 @@ const Basement = () => {
                 </li>
             </ol>
 
-            <div className="footer">Workford</div>
+            <div className="footer">Cпасибо за внимание:///////////////
+            </div>
         </div>
     );
 }
